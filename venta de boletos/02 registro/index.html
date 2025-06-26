@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Registro de usuario</title>
         <link rel="stylesheet" href="diseñoRegistro.css">
-        <script src="registro.js"></script>
         <script src="/venta de boletos/01 Menu principal/asientos.js"></script>
           
     </head>
@@ -20,13 +19,28 @@
             <input type="text" id="rut">
             
             <p>Ciudad de origen</p>
-            <input type="text" id="ciudadInicio">
+            <select id="ciudadInicio">
+              <option value="">Seleccione</option>
+              <option value="Santiago">Santiago</option>
+              <option value="Valparaíso">Valparaíso</option>
+              <option value="Concepción">Concepción</option>
+              <option value="La Serena">La Serena</option>
+              <option value="Ovalle">Ovalle</option>
+
+            </select>
 
             <p>Ciudad de destino</p>
-            <input type="text" id="ciudadDestino">
+            <select id="ciudadDestino">
+              <option value="">Seleccione</option>
+              <option value="Santiago">Santiago</option>
+              <option value="Valparaíso">Valparaíso</option>
+              <option value="Concepción">Concepción</option>
+              <option value="La Serena">La Serena</option>
+              <option value="Ovalle">Ovalle</option>
+            </select>
 
             <p>Valor pasaje</p>
-            <input type="text" id="valorPasaje">
+            <input type="number" id="valorPasaje" value="10000" readonly>
 
             <p>Tarjeta de registro</p>
             <input type="text" id="tarjeta">
@@ -42,4 +56,5 @@
           </div>
         </div>
     </body>
+    <script src="registro.js"></script>
 </html>

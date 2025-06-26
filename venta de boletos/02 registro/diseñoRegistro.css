@@ -32,6 +32,7 @@ input {
     width: 180px;
     height: 30px;
     background-color: rgb(239, 247, 0);
+    color: black;
 }
 
 /* Modal flotante */
@@ -44,7 +45,7 @@ input {
   background: rgba(0,0,0,0.5);
 }
 .modal-contenido {
-  background: rgba(88, 62, 254, 0.913);
+  background: rgba(2, 123, 171, 0.731);
   margin: 10% auto;
   padding: 30px 20px;
   border-radius: 10px;
@@ -54,4 +55,11 @@ input {
 .modal-contenido button {
   margin: 10px;
   padding: 8px 16px;
+}
+
+select {
+    width: 180px;
+    height: 30px;
+    background-color: rgb(239, 247, 0);
+    color: black;
 }

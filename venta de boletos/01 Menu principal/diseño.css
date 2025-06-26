@@ -2,6 +2,9 @@ body {
     background-color: rgba(2, 123, 171, 0.731);
     border-radius: 5%;
     border-top: 10px;
+    padding: auto;
+    width: 1400px;
+    height: 1400px;
 }
 
 h1 {
@@ -35,8 +38,8 @@ button {
     color: black;
 }
 .fila {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     padding: 10px;
     text-align: center;
 }

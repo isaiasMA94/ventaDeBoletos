@@ -67,7 +67,7 @@ function comprar() {
     if (asientoSeleccionado) {
         // Obtener el estado actual de los asientos o crear uno nuevo
         let asientos = JSON.parse(localStorage.getItem("asientos")) || [];
-        // Marcar el asiento como ocupado con los datos del pasajero
+        // Marcar el asiento como ocupado with los datos del pasajero
         asientos[asientoSeleccionado.fila * 10 + asientoSeleccionado.columna] = pasajero;
         // Guardar el estado actualizado
         localStorage.setItem("asientos", JSON.stringify(asientos));
@@ -107,4 +107,42 @@ function cerrarModal() {
     // Redirigir a la página de asientos
     window.location.href = "../01 Menu principal/asientos.html";
 }
+
+// Puedes poner esto en un archivo JS global o en tu archivo de registro
+const ciudades = ["Santiago", "Valparaíso", "Concepción", "Ovalle", "La Serena"];
+
+// Tabla de precios según ciudades (puedes modificar los valores)
+const tablaPrecios = {
+    "Santiago-Valparaíso": 12000,
+    "Santiago-Concepción": 25000,
+    "Santiago-La Serena": 20000,
+    "Santiago-Ovalle": 18000,
+    "Valparaíso-Concepción": 30000,
+    "Valparaíso-La Serena": 22000,
+    "Valparaíso-Ovalle": 20000,
+    "Concepción-La Serena": 35000,
+    "Concepción-Ovalle": 32000,
+    "La Serena-Ovalle": 15000,
+    // Puedes agregar más combinaciones si lo deseas
+};
+
+// Función para actualizar el valor del pasaje
+function actualizarPrecio() {
+    const origen = document.getElementById("ciudadInicio").value;
+    const destino = document.getElementById("ciudadDestino").value;
+    let precio = 10000; // Precio mínimo
+
+    if (origen && destino && origen !== destino) {
+        const clave1 = `${origen}-${destino}`;
+        const clave2 = `${destino}-${origen}`;
+        precio = tablaPrecios[clave1] || tablaPrecios[clave2] || 10000;
+    }
+    document.getElementById("valorPasaje").value = precio;
+}
+
+// Asociar la función a los selects
+window.onload = function() {
+    document.getElementById("ciudadInicio").addEventListener("change", actualizarPrecio);
+    document.getElementById("ciudadDestino").addEventListener("change", actualizarPrecio);
+};
 
