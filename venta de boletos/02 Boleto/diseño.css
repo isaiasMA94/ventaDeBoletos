@@ -1,0 +1,36 @@
+body {
+    background-color: rgba(2, 123, 171, 0.731);
+    border-radius: 5%;
+    border-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(240, 240, 240);
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: rgba(88, 62, 254, 0.913);
+}
+
+.menu {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: initial;
+    font-style: inherit;
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.95);
+    padding: 30px;  
+}
+
+input {
+    width: 180px;
+    height: 30px;
+    background-color: rgb(239, 247, 0);
+    color: black;
+}
