@@ -5,9 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Registro de usuario</title>
         <link rel="stylesheet" href="diseñoRegistro.css">
-        <script src="registro"></script>
-        <script src="pasajero"></script>
-        <script src="asiento"></script>
+        <script src="registro.js"></script>
           
     </head>
     <body>
@@ -17,11 +15,20 @@
             <p>Nombre</p>
             <input type="text" id="nombre">
             
-            <p>Email</p>
-            <input type="text" id="email">
+            <p>Rut</p>
+            <input type="text" id="rut">
             
-            <p>Telefono</p>
-            <input type="number" id="telefono">
+            <p>Ciudad de origen</p>
+            <input type="text" id="ciudadInicio">
+
+            <p>Ciudad de destino</p>
+            <input type="text" id="ciudadDestino">
+
+            <p>Valor pasaje</p>
+            <input type="text" id="valorPasaje">
+
+            <p>Tarjeta de registro</p>
+            <input type="text" id="tarjeta">
             <br><br>
             <button onclick="comprar()">Comprar &#x1F448;</button>
         </div>

@@ -18,7 +18,7 @@ h2 {
     color: rgba(88, 62, 254, 0.913);
 }
 
-.menu {
+.menuPrincipal {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: initial;
@@ -28,7 +28,7 @@ h2 {
     padding: 30px;  
 }
 
-input {
+button {
     width: 180px;
     height: 30px;
     background-color: rgb(239, 247, 0);
