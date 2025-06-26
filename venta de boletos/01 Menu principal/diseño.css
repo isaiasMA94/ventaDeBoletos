@@ -34,3 +34,23 @@ button {
     background-color: rgb(239, 247, 0);
     color: black;
 }
+.fila {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+button.libre {
+    background-color: #4CAF50;
+    color: white;
+    margin: 2px;
+    width: 40px;
+    height: 40px;
+}
+button.ocupado {
+    background-color: #f44336;
+    color: white;
+    margin: 2px;
+    width: 40px;
+    height: 40px;
+}

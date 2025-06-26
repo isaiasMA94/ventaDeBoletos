@@ -6,6 +6,7 @@
         <title>Registro de usuario</title>
         <link rel="stylesheet" href="diseñoRegistro.css">
         <script src="registro.js"></script>
+        <script src="/venta de boletos/01 Menu principal/asientos.js"></script>
           
     </head>
     <body>
@@ -31,6 +32,14 @@
             <input type="text" id="tarjeta">
             <br><br>
             <button onclick="comprar()">Comprar &#x1F448;</button>
+        </div>
+        <div id="modalExito" class="modal">
+          <div class="modal-contenido">
+            <div id="datosViaje"></div>
+            <p>¿Quiere comprar otro boleto?</p>
+            <button onclick="volverMenu()">Volver al menú principal</button>
+            <button onclick="cerrarModal()">Comprar otro boleto</button>
+          </div>
         </div>
     </body>
 </html>
